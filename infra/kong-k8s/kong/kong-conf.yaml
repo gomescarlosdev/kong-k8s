@@ -5,8 +5,10 @@
 # kubectl port-forward deploy/your-deployment-kong 8001:8001
 
 image:
-  repository: ghcr.io/devfullcycle/fc3-kong-automation
+  repository: registry-1.docker.io/ramonpacheco/kong-automation
   tag: 1.0.0
+  platforms:
+    - linux/amd64
 
 env:
   prefix: /kong_prefix/
